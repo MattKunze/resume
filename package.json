@@ -1,0 +1,7 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matt Kunze <matt.kunze@datasplice.com>",
+  "license": "MIT"
+}

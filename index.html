@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matt Kunze - Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <style>
+      /* duplicate Bulma variables so look and feel is consistent */
+      :root {
+        --black: hsl(0, 0%, 4%);
+        --black-bis: hsl(0, 0%, 7%);
+        --black-ter: hsl(0, 0%, 14%);
+
+        --grey-darker: hsl(0, 0%, 21%);
+        --grey-dark: hsl(0, 0%, 29%);
+        --grey: hsl(0, 0%, 48%);
+        --grey-light: hsl(0, 0%, 71%);
+        --grey-lighter: hsl(0, 0%, 86%);
+        --grey-lightest: hsl(0, 0%, 93%);
+
+        --white-ter: hsl(0, 0%, 96%);
+        --white-bis: hsl(0, 0%, 98%);
+        --white: hsl(0, 0%, 100%);
+
+        --orange: hsl(14, 100%, 53%);
+        --yellow: hsl(48, 100%, 67%);
+        --green: hsl(141, 53%, 53%);
+        --turquoise: hsl(171, 100%, 41%);
+        --cyan: hsl(204, 71%, 53%);
+        --blue: hsl(217, 71%, 53%);
+        --purple: hsl(271, 100%, 71%);
+        --red: hsl(348, 86%, 61%);
+      }
+      /* add a few bulma-inspired helper classes */
+      .has-bottom-border {
+        border-bottom: 2px solid var(--turquoise);
+      }
+      .is-flex-column {
+        flex-direction: column;
+      }
+      .is-end-aligned {
+        align-items: flex-end;
+      }
+      /* custom list bullets */
+      .has-bulleted-list > li {
+        display: flex;
+      }
+      .has-bulleted-list > li:before {
+        background-color: var(--turquoise);
+        border-radius: 50%;
+        content: "";
+        height: 5px;
+        width: 5px;
+        margin: 0.5rem;
+      }
+      /* tweak layout a bit */
+      .contact-info {
+        padding: 1.5rem 0;
+      }
+      .section {
+        padding: 2rem 0;
+      }
+      .section + .section {
+        padding-top: 0;
+      }
+      .block {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--grey-lighter);
+      }
+      .block:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="level contact-info has-bottom-border">
+        <div class="level-left">
+          <div class="level item has-right-text">
+            <div>
+              <p class="title">Matt Kunze</p>
+              <p class="subtitle">Senior Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level item is-flex-column is-end-aligned">
+            <a class="link is-info" href="mailto:matt.kunze@gmail.com">
+              matt.kunze@gmail.com
+              <span class="icon"><i class="far fa-envelope"></i></span>
+            </a>
+            <a class="link is-info" href="tel:1-970-430-5424">
+              970.430.5424
+              <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+            </a>
+            <a class="link is-info" href="https://github.com/MattKunze">
+              MattKunze
+              <span class="icon"><i class="fab fa-github"></i></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="section">
+            <p>
+              I'm a software engineer with a broad range of experience, most
+              recently building complex enterprise single page applications
+              using HTML5 tools and various backends.
+            </p>
+            <p>
+              I have led small development teams to build a variety of software,
+              and have also worked on projects within a range of organizational
+              structures from large government projects to Fortune 500 companies
+              to smaller consulting firms.
+            </p>
+            <p>
+              I have strong written and verbal communication skills, the ability
+              to quickly learn new technologies, and am looking forward to my
+              next opportunity to work with an organization that is passionate
+              about solving real world problems with technology.
+            </p>
+          </div>
+
+          <div class="section">
+            <div class="subtitle has-bottom-border">Goals</div>
+            <ul class="has-bulleted-list">
+              <li>
+                Work with talented individuals to build quality software that is
+                of high value to the customer
+              </li>
+              <li>
+                Apply my experience to interesting problem spaces
+              </li>
+              <li>
+                Collaborate with a team where I can teach my strengths and learn
+                new skills from others
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <div class="subtitle has-bottom-border">Experience</div>
+            <div class="block">
+              <em>
+                Led a small team of developers to build a rich, offline-first
+                data application
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Managed development definition, priorities, and interaction
+                  with stakeholders
+                </li>
+                <li>
+                  Integrated with various existing enterprise data applications
+                </li>
+                <li>
+                  Evolved architecture as new capabilities and best practices
+                  emerged from the community
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Worked on a project with a large power company to develop mobile
+                inspection software across the organization
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Increased operational compliance with mandated equipment
+                  inspection procedures
+                </li>
+                <li>
+                  Worked with management, supervisors, and field users to
+                  identify core requirements
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Led development effort to add GIS capabilities to a project for
+                offline map integration
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Cross platform solution that cached hundreds of thousands of
+                  GIS features to cover service area using browser technologies
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="section">
+            <div class="subtitle has-bottom-border">Skills</div>
+            <div class="block">
+              <strong>Web development experience</strong>
+              <ul class="has-bulleted-list">
+                <li>JavaScript - ES6, TypeScript</li>
+                <li>React - Redux, RxJS</li>
+                <li>Web Technologies - IndexedDB, Service Workers</li>
+                <li>Devops - Webpack, Babel, Jenkins</li>
+              </ul>
+            </div>
+            <div class="block">
+              <strong>Server/backend experience</strong>
+              <ul class="has-bulleted-list">
+                <li>Node.js</li>
+                <li>.NET - Core/Framework</li>
+                <li>Spring Boot - Kotlin, Java</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+            <div class="block">
+              <strong>Windows development experience</strong>
+              <ul class="has-bulleted-list">
+                <li>UWP</li>
+                <li>C++/MFC</li>
+              </ul>
+            </div>
+            <div class="block">
+              <strong>Current learning interests</strong>
+              <ul class="has-bulleted-list">
+                <li>F# - SAFE Stack</li>
+                <li>Domain Driven Design with functional type systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="section is-paddingless">
+            <div class="subtitle has-bottom-border">Work History</div>
+            <p>
+              <strong>Prometheus Group</strong> <em>2018 - present</em> - Senior
+              Software Developer
+            </p>
+            <p>
+              <strong>DataSplice LLC.</strong> <em>2001 - 2018</em> - Senior
+              Software Developer and Team Lead
+            </p>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="section is-paddingless">
+            <div class="subtitle has-bottom-border">Education</div>
+            <div class="block">
+              <strong>Colorado State University</strong>
+              <p>Bachelor's Degree in Computer Science and Mathematics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
