@@ -72,13 +72,22 @@
       .section + .section {
         padding-top: 0;
       }
-      .block {
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid var(--grey-lighter);
-      }
       .block:last-child {
         padding-bottom: 0;
         border-bottom: none;
+      }
+      .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--grey-lighter);
+      }
+      .info > .position {
+        font-weight: bold;
+      }
+      .info > .timeframe {
+        font-style: italic;
       }
     </style>
   </head>
@@ -89,7 +98,7 @@
           <div class="level item has-right-text">
             <div>
               <p class="title">Matt Kunze</p>
-              <p class="subtitle">Senior Software Developer</p>
+              <p class="subtitle">Software Architect and Developer</p>
             </div>
           </div>
         </div>
@@ -103,6 +112,13 @@
               970.430.5424
               <span class="icon"><i class="fas fa-mobile-alt"></i></span>
             </a>
+            <a
+              class="link is-info"
+              href="https://www.linkedin.com/in/matt-kunze-89a21491/"
+            >
+              Matt Kunze
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+            </a>
             <a class="link is-info" href="https://github.com/MattKunze">
               MattKunze
               <span class="icon"><i class="fab fa-github"></i></span>
@@ -115,242 +131,286 @@
       <div class="columns">
         <div class="column">
           <div class="section">
-            <p>
-              I'm a software engineer with a broad range of experience, most
-              recently building complex enterprise single page applications
-              using HTML5 tools and various backends.
-            </p>
-            <p>
-              I have led small development teams to build a variety of software,
-              and have also worked on projects within a range of organizational
-              structures from large government projects to Fortune 500 companies
-              to smaller consulting firms.
-            </p>
-            <p>
-              I have strong written and verbal communication skills, the ability
-              to quickly learn new technologies, and am looking forward to my
-              next opportunity to work with an organization that is passionate
-              about solving real world problems with technology.
-            </p>
-          </div>
-
-          <div class="section">
-            <div class="subtitle has-bottom-border">Goals</div>
             <ul class="has-bulleted-list">
               <li>
-                Work with talented individuals to build quality software that is
-                of high value to the customer
+                Architect and technical leader with expertise in cloud-native
+                architectures, microservices, and enterprise application
+                development
               </li>
               <li>
-                Apply my experience to interesting problem spaces
+                Data engineering experience with a focus on stewardship and
+                governance and extensive expertise with decoupled integration
+                patterns
               </li>
               <li>
-                Collaborate with a team where I can teach my strengths and learn
-                new skills from others
+                Strong background in full-stack development spanning React
+                ecosystem, serverless and containerized backends, and modern dev
+                tooling
+              </li>
+              <li>
+                Proven ability to balance technical excellence with business
+                objectives while mentoring teams and fostering innovation
               </li>
             </ul>
           </div>
+
           <div class="section">
-            <div class="subtitle has-bottom-border">Experience</div>
+            <div class="subtitle has-bottom-border">
+              Professional Experience
+            </div>
+            <div class="info">
+              <div class="position">
+                Principal Software Architect - Nutrien Ag Solutions
+              </div>
+              <div class="timeframe">2020 - Present</div>
+            </div>
             <div class="block">
               <em>
-                Led a development team to develop a rich, offline-first mobile
-                application
+                Created messaging architecture for event driven data mesh using
+                AWS Managed Streaming for Apache Kafka (MSK)
               </em>
               <ul class="has-bulleted-list">
                 <li>
-                  Developed a single page application using React and Redux to
-                  provide cross-platform capabilities
+                  Defined synchronization patterns for both internal systems and
+                  third party partners
                 </li>
                 <li>
-                  Managed development definition, priorities, and interaction
-                  with stakeholders
+                  Established comprehensive data governance framework that
+                  resolved longstanding data consistency issues, standardized
+                  data ownership, and created clear lineage tracking
                 </li>
+                <li>
+                  Fostered system decoupling and overall improvements in SLA
+                  compliance and reliability
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Primary architect and developer for creating a cloud native
+                development platform using AWS CDK
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Event driven architecture emphasizing serverless technologies
+                  such Lambda, AppSync, API Gateway, and Step Functions with
+                  along with dynamic ECS workloads
+                </li>
+                <li>
+                  Security-first patterns resulted in third party penetration
+                  test yielding zero vulnerabilities or security issues
+                </li>
+                <li>
+                  Onboarded ~10 teams to ecosystem over 12 months creating
+                  standardized infrastructure patterns that improved cross-team
+                  collaboration
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Implemented federated GraphQL API to consolidate network access
+                for applications and services
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Supported data mesh architecture with clear data domain
+                  responsibilities and ownership
+                </li>
+                <li>
+                  Consolidated legacy APIs under unified access patterns and
+                  authorization using OAuth and OpenFGA
+                </li>
+                <li>
+                  Integrated schema checks and best practice enforcement to
+                  reduce errors and deployment of breaking changes
+                </li>
+              </ul>
+            </div>
+            <div style="page-break-before: always"></div>
+            <div class="block">
+              <em> Founded and facilitated cross team API governance group </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Developed and socialized best practices for GraphQL schema,
+                  event message formats, and other integration concerns and
+                  codified change management and deprecation strategies
+                </li>
+                <li>
+                  Fostered stewardship and ownership across teams to reduce need
+                  of strict centralized governance
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Led POC project to explore capabilities for aggregating
+                heterogenous geospatial data from various sources using H3
+                tiling to visualize across spatial and time axes
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Used SageMaker geospatial to process and index data for
+                  efficient computation along with example interfaces using
+                  kepler.gl
+                </li>
+                <li>
+                  Combined sources with a variety of representations (GeoJSON,
+                  WKT, point cloud) to interpolate results across shared tiling
+                  representation
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Established effort to triage performance issues with a React
+                Native application
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Created process for capturing metrics, identified common
+                  issues with hook usage and state management libraries, and
+                  worked with teams to implement and socialize improvements
+                </li>
+                <li>
+                  Resolved key performance issues preventing application
+                  adoption before handing off to dedicated team
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <em>
+                Evangelized and mentored teams to support JavaScript to
+                TypeScript conversion efforts resulting in maintenance and
+                quality improvements across the organization
+              </em>
+            </div>
+            <div class="block">
+              <em>
+                Implemented OAuth 2.0 and OpenFGA for fine-grained
+                authorization, modernizing legacy authentication systems
+              </em>
+            </div>
+            <div class="info">
+              <div class="position">
+                Senior Software Developer - Prometheus Group
+              </div>
+              <div class="timeframe">2018 - 2020</div>
+            </div>
+            <div class="block">
+              <em>
+                Developed integration software for enterprise asset management
+                inspection proceses using React, RxJS, Spring Boot, and RabbitMQ
+              </em>
+              <ul class="has-bulleted-list">
+                <li>
+                  Collaborated directly with management, supervisors, and field
+                  users to identify core requirements
+                </li>
+              </ul>
+            </div>
+            <div class="info">
+              <div class="position">
+                Instructor - Front Range Community College
+              </div>
+              <div class="timeframe">2013 - 2014</div>
+            </div>
+            <div class="block">
+              <em>
+                Designed and taught JavaScript programming course for WebDev
+                Bootcamp
+              </em>
+            </div>
+            <div class="info">
+              <div class="position">
+                Senior Software Developer and Team Lead - DataSplice LLC
+              </div>
+              <div class="timeframe">2001 - 2018</div>
+            </div>
+            <div class="block">
+              <em>
+                Led development team to develop a rich, offline-first mobile
+                application
+              </em>
+              <ul class="has-bulleted-list">
                 <li>
                   Integrated with hardware devices, including Bluetooth bar code
                   scanners, camera (for attachments and scanning), GPS, and
                   Bluetooth printers
                 </li>
-                <li>
-                  Used Ionic, Cordova, and Electron to provide platform specific
-                  targets
-                </li>
-                <li>Managed app store submissions for iOS and Android</li>
-                <li>
-                  Evolved architecture as new capabilities and best practices
-                  emerged from the community (Backbone -> React -> Flux ->
-                  Redux)
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <em>
-                Managed development for a middleware server layer that provided
-                data-driven rules for our SPA
-              </em>
-              <ul class="has-bulleted-list">
-                <li>
-                  <div class="is-flex-column">
-                    <p>
-                      Plug-in architecture to integrate with a variety of
-                      enterprise data applications:
-                    </p>
-                    <ul class="has-bulleted-list">
-                      <li>Web Services using SOAP and REST endpoints</li>
-                      <li>Java/RMI</li>
-                      <li>ADO.NET</li>
-                    </ul>
-                  </div>
-                </li>
-                <li>Common REST API for frontend across backend services</li>
-                <li>
-                  Upgraded networking layer from legacy C# web services to
-                  ASP.NET Core to expand hosting and authentication options
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <em>
-                Developed a configuration utility for a variety of internal
-                applications
-              </em>
-              <ul class="has-bulleted-list">
-                <li>
-                  Reactive development using redux-observable on the frontend
-                  and WebFlux/Reactor on the backend
-                </li>
-                <li>Provides REST APIs using Spring Boot in Kotlin</li>
-                <li>
-                  Spring Cloud Gateway on top of microservice architecture using
-                  Docker Compose
-                </li>
-                <li>Utilize RabbitMQ to decouple resources</li>
-              </ul>
-            </div>
-            <div class="block">
-              <em>
-                Worked on a project with a large power company to develop mobile
-                inspection software across the organization
-              </em>
-              <ul class="has-bulleted-list">
-                <li>
-                  Increased operational compliance with mandated equipment
-                  inspection procedures
-                </li>
-                <li>
-                  Collaborated directly with management, supervisors, and field
-                  users to identify core requirements
-                </li>
-                <li>
-                  Wrote node-based transform service to import third party data
-                  from previous application to minimize work needed to port
-                  inspection details
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <em>
-                Led development effort to add GIS capabilities to a project for
-                offline map integration
-              </em>
-              <ul class="has-bulleted-list">
-                <li>
-                  Integrated with ESRI service layers and converted to GeoJSON
-                  to display with Leaflet.js
-                </li>
-                <li>
-                  Cross platform solution using IndexedDB in the browser to
-                  cache offline information that was capable of managing
-                  hundreds of thousands of features (coverage for entire metro
-                  city area)
-                </li>
-                <li>
-                  Utilize Geohash to efficiently query features given boundaries
-                </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="column is-one-quarter">
           <div class="section">
             <div class="subtitle has-bottom-border">Skills</div>
+
             <div class="block">
-              <strong>Web development experience</strong>
+              <strong>Architecture Patterns</strong>
               <ul class="has-bulleted-list">
-                <li>JavaScript - ES6, TypeScript</li>
-                <li>React - Redux, RxJS</li>
-                <li>Web Technologies - IndexedDB, Service Workers</li>
-                <li>Testing - Jest, Karma, Cypress</li>
-                <li>CSS - Sass, CSS Modules, styled-components</li>
+                <li>Event-Driven Architecture</li>
+                <li>Domain-Driven Design</li>
+                <li>CQRS/Event Sourcing</li>
+                <li>Microservices</li>
+                <li>Data Mesh</li>
+                <li>Reactive Programming</li>
               </ul>
             </div>
+
             <div class="block">
-              <strong>Server/backend experience</strong>
+              <strong> Cloud & Infrastructure </strong>
               <ul class="has-bulleted-list">
-                <li>Node.js</li>
-                <li>.NET - Core/Framework</li>
-                <li>Spring Boot - Kotlin, Java</li>
-                <li>Docker</li>
-                <li>RabbitMQ</li>
-                <li>API Development - REST, SOAP, STOMP, GraphQL</li>
-                <li>SQL - Oracle, SQL Server, PostgreSQL</li>
+                <li>AWS: Lambda, ECS, AppSync, MSK, SageMaker, CDK</li>
+                <li>
+                  Infrastructure: Terraform, GitHub Actions, Docker, Kubernetes
+                </li>
+                <li>Observability: OpenTelemetry, CloudWatch, X-Ray</li>
               </ul>
             </div>
+
             <div class="block">
-              <strong>Windows development experience</strong>
+              <strong>Data & Integration</strong>
               <ul class="has-bulleted-list">
-                <li>UWP</li>
-                <li>C++/MFC</li>
-                <li>Windows Mobile</li>
+                <li>Event Streaming: Apache Kafka, AWS MSK, RabbitMQ</li>
+                <li>APIs: GraphQL Federation, REST, WebSockets</li>
+                <li>Data Storage: Apache Iceberg, Redshift, DynamoDB, RDS</li>
+                <li>Authentication: OAuth 2.0, OpenFGA, Auth0</li>
               </ul>
             </div>
+
+            <div style="page-break-before: always"></div>
+
             <div class="block">
-              <strong>Process Tools</strong>
+              <strong>Languages & Frameworks</strong>
               <ul class="has-bulleted-list">
-                <li>JIRA</li>
-                <li>GitHub, GitLab</li>
-                <li>Code Review, GitFlow</li>
-                <li>Devops - Webpack, Babel, Jenkins</li>
+                <li>TypeScript/JavaScript (Expert)</li>
+                <li>Python, C++ (Proficient)</li>
+                <li>React/React Native</li>
               </ul>
             </div>
-            <div class="block">
-              <strong>Current learning interests</strong>
-              <ul class="has-bulleted-list">
-                <li>F# - SAFE Stack</li>
-                <li>Domain Driven Design with functional type systems</li>
-              </ul>
+
+            <div class="section">
+              <div class="subtitle has-bottom-border">Education</div>
+              <div class="block">
+                <strong>Colorado State University</strong>
+                <p>Bachelor's Degree in Computer Science and Mathematics</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="section is-paddingless">
-            <div class="subtitle has-bottom-border">Work History</div>
-            <p>
-              <strong>Prometheus Group</strong>
-              <em>(acquired DataSplice) 2018 - present</em> - Senior Software
-              Developer
-            </p>
-            <p>
-              <strong>DataSplice LLC.</strong> <em>2001 - 2018</em> - Senior
-              Software Developer and Team Lead
-            </p>
-            <p>
-              <strong>Front Range Community College WebDev Bootcamp</strong>
-              <em>2013 - 2014</em> - JavaScript Programming Course Designer and
-              Instructor
-            </p>
-          </div>
-        </div>
-        <div class="column is-one-quarter">
-          <div class="section is-paddingless">
-            <div class="subtitle has-bottom-border">Education</div>
-            <div class="block">
-              <strong>Colorado State University</strong>
-              <p>Bachelor's Degree in Computer Science and Mathematics</p>
+
+            <div class="section">
+              <div class="subtitle has-bottom-border">Current Interests</div>
+              <div class="block">
+                <ul class="has-bulleted-list">
+                  <li>Type systems and functional programming</li>
+                  <li>Sqlite and DuckDB</li>
+                  <li>ATProto and BlueSky</li>
+                  <li>DX tools, CI/CD, and automation</li>
+                  <li>Renewable energy</li>
+                  <li>Riding bicycles</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
